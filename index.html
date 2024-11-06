@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <title>Philippine Hospital Detail Site</title>
+</head>
+<body>
+ 
+  <nav>
+    <a href ="index.html"><img class="health" src="nurse.png"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+     <ul>
+            <li><a href=""> HOME</a></li>
+            <li><a href=""> ABOUT</a></li>
+            <li><a href=""> AVAILABILITY</a></li>
+            <li><a href=""> DISCOUNTS</a></li>
+            <li><a href=""> CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+  
+  <div class="container">
+      <a href="https://www.chcg.gov.tw/eng/hospital-information.aspx" target="_blank">
+        <img src="chunghua2.png">
+      </a>
+  <a href="https://vsmmc.doh.gov.ph/index.php/transparency-seal/mandate-and-functions/10-about" target="_blank">
+    <img src="vsmmc.png">
+  </a>
+   <a href="https://ucmed.ph/" target="_blank">
+    <img src="UCMed Lobby.png">
+   </a>
+   <a href="https://en.wikipedia.org/wiki/Eversley_Childs_Sanitarium_and_General_Hospital" target="_blank">
+    <img src="eversly.png">
+   </a>
+  </div>
+
+  <div class="text-box">
+    <h1>Hello, Patients</h1>
+    <p> Here are some Famous hospitals that willing to service you</p>
+  </div>     
+  <script>
+    var navlinks = document.getElementById("navLinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
